@@ -1,0 +1,116 @@
+body {
+    background-image: url('../static/fundo.jpg'); /* O nome da sua imagem */
+    background-size: cover; /* Ajusta a imagem para cobrir todo o container */
+    background-position: center; /* Centraliza a imagem */
+    background-repeat: no-repeat; /* Evita que a imagem se repita */
+    margin: 0;
+    height: 100vh; /* Ocupa toda a altura da tela */
+    display: flex; /* Flexbox para centralizar o conteúdo */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+}
+
+.container {
+    max-width: 400px; /* Largura máxima do formulário */
+    background: rgba(255, 255, 255, 0.9); /* Fundo semi-transparente */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center; /* Centraliza texto dentro do container */
+}
+
+h1 {
+    color: #333;
+}
+
+label {
+    display: block;
+    margin: 15px 0 5px;
+    color: #555;
+}
+
+input[type="text"],
+input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type="submit"] {
+    background-color: #5cb85c;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 10px;
+}
+
+input[type="submit"]:hover {
+    background-color: #4cae4c;
+}
+
+body {
+    background-image: url('../static/fundo.jpg'); /* O nome da sua imagem */
+    background-size: cover; /* Ajusta a imagem para cobrir todo o container */
+    background-position: center; /* Centraliza a imagem */
+    background-repeat: no-repeat; /* Evita que a imagem se repita */
+    color: rgb(0, 0, 0); /* Cor padrão do texto */
+    height: 100vh; /* Ocupa toda a altura da tela */
+    display: flex; /* Flexbox para centralizar o conteúdo */
+    flex-direction: column; /* Coloca os itens em coluna */
+    align-items: center; /* Centraliza os itens horizontalmente */
+    justify-content: center; /* Centraliza os itens verticalmente */
+}
+
+.welcome-message {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background-color: rgba(244, 244, 244, 0.8); /* Fundo semi-transparente */
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 1.2em;
+    color: #333;
+}
+
+h1 {
+    color: #000000; /* Cor do título */
+    margin-bottom: 50px;
+}
+
+.button-container {
+    margin-top: 80px; /* Espaço acima dos botões */
+}
+
+.button-group {
+    display: flex;
+    flex-direction: column; /* Coloca os botões em coluna */
+    align-items: center; /* Centraliza os botões */
+}
+
+.btn {
+    border-radius: 25px; /* Bordas arredondadas */
+    transition: background-color 0.3s, transform 0.2s; /* Efeito de transição */
+    padding: 20px; /* Aumenta o tamanho do botão */
+    width: 300px; /* Largura fixa dos botões */
+}
+
+.btn:hover {
+    transform: scale(1.05); /* Aumenta o botão ao passar o mouse */
+}
+
+#mensagem h3 {
+    font-weight: bold; /* Deixa o texto em negrito */
+    font-size: 1.6em; /* Aumenta o tamanho da fonte */
+    color: #007bff; /* Altera a cor do texto para azul */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Sombra suave no texto */
+    padding: 20px; /* Adiciona um espaçamento ao redor do texto */
+    background-color: rgba(255, 255, 255, 0.7); /* Fundo semi-transparente para destacar o texto */
+    border-radius: 8px; /* Bordas arredondadas */
+    max-width: 90%; /* Limita a largura do texto */
+    margin: 20px auto; /* Centraliza a mensagem */
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <title>JOGOS EDUCACIONAIS</title>
+</head>
+<body>
+    <div class="welcome-message">
+        Bem-vindo, {{ user.name }}! Idade: {{ user.age }}
+    </div>
+    <div class="container text-center button-container">
+        <h1>JOGOS EDUCACIONAIS</h1>
+        <div class="button-group">
+            <button class="btn btn-primary btn-lg m-3" onclick="abrirLink('https://kahoot.it/solo/?quizId=e2f4de18-81b0-4076-8ba9-b0e6e1c238cb')">Matemática</button>
+            <button class="btn btn-success btn-lg m-3" onclick="abrirLink('https://kahoot.it/solo/?quizId=774b5561-7507-4cdd-ae5a-e02a312aa076')">Ciências</button>
+            <button class="btn btn-danger btn-lg m-3" onclick="abrirLink('https://kahoot.it/solo/?quizId=32ac5d1c-183a-46ec-95f1-baea02c7f963')">História</button>
+            <button class="btn btn-warning btn-lg m-3" onclick="abrirLink('https://kahoot.it/solo/?quizId=314e2e2d-6e40-428f-ab83-01f70294912c')">Português</button>
+            <button class="btn btn-info btn-lg m-3" onclick="abrirLink('https://kahoot.it/solo/?quizId=533a3704-046b-4c99-9500-84a80d3e8c06')">Geografia</button>
+        </div>
+    </div>
+
+    <div id="mensagem" class="text-center mt-4">
+        <h3>Escolha uma disciplina e selecione o modo de jogo! <br>Recomendado: Modo de jogo "Praticar"</h3>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    
+    <script>
+        function abrirLink(link) {
+            const btns = document.querySelectorAll('.btn');
+            btns.forEach(btn => {
+                btn.style.transform = 'scale(1.1)'; // Aumenta o botão
+                btn.style.transition = 'transform 0.2s'; // Transição suave
+            });
+
+            setTimeout(() => {
+                // Abre o link em uma nova aba
+                window.open(link, '_blank');  // '_blank' abre o link em uma nova aba
+            }, 200); // Espera 200ms para a animação antes de abrir o link
+        }
+    </script>
+</body>
+</html>
